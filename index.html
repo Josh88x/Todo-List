@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/android-chrome-512x512.png" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript file -->
+    <script defer src="script.js"></script>
+    <title>Project Hub</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <!-- logo -->
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+
+            </div>
+            <h1>Project Hub</h1>
+        </nav>
+                <!-- Clock Section -->
+                <div class="clock"></div>
+
+    </header>
+    <main>
+        <!-- Todo List Section -->
+        <section class="todo-section">
+            <h1 class="todo-title">Todo List</h1>
+            <div class="todo-form">
+                <!-- Todo input -->
+                <div class="todo-input-container">
+                    <label for="todo-input">Enter Todo:</label>
+                    <input onsubmit="addTodo()" placeholder="Clean room..." class="todo-input" type="text">
+                    <button onclick="addTodo()" class="todo-btn">Submit</button>
+                </div>
+                <!-- Todos -->
+                <div class="todo-list">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
